@@ -11,7 +11,7 @@ header{
     width: 100%;
     padding: 0 8% ;
     position: relative;
-    background-color: white;
+    background-color: gold;
 }
 nav{
     display: flex;
@@ -39,7 +39,7 @@ nav{
 
 .nav-links li a:hover{
     width: 100%;
-    color: goldenrod;
+    color: white;
 }
 #home{
     height: 100vh;
@@ -57,28 +57,25 @@ nav{
     font-size: 50px;
     text-align: center;
 }
-#home button{
+#home .button{
     position: absolute;
+    left: 43%;
     top: 70%;
-    left: 50%;
-    width: 120px;
-    height: 50px;
+    width: 20%;
+    text-align: center;
+    display: inline-block;
+    padding: 10px 20px;
     background-color: goldenrod;
-    color: white;
-}
-#home button > a{
-    font-size: x-large;
-    color: white;
+    color: #fff;
+    font-size: 20px;
     text-decoration: none;
-    border-radius: 30px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 25px;
+    margin-top: 15px;
+    transition: 0.3s ease;
 }
-#home button:hover{
+#home .button:hover{
     background-color: white;
-}
-#home button > a:hover{
     color: goldenrod;
-    background-color: white;
 }
 
 #About{
@@ -116,6 +113,12 @@ nav{
     margin: 0 auto;
     padding: 10px 20px;
 }
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
 .about-image{
     flex:1;
     margin-right: 40px;
@@ -127,8 +130,38 @@ nav{
     display: block;
     transition: 0.5s ease;
 }
-.about_content{
+.about-image:hover img{
+    transform: scale(1.2);
+}
+.content_about{
     flex: 1;
+}
+.content_about h2{
+    font-size: 25px;
+    margin-bottom: 15px;
+    color: white;
+}
+.content_about p{
+    font-size: 18px;
+    line-height: 1.5;
+    color: #666;
+}
+.content_about .read-more{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: goldenrod;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 15px;
+    transition: 0.3s ease;
+}
+.content_about .read-more:hover{
+    text-decoration: none;
+    border-radius: 25px;
+    background-color: #fff;
+    color: goldenrod;    
 }
 .container1{
     width: 80%;
